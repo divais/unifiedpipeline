@@ -1,21 +1,91 @@
 # Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
 
-pool:
-  vmImage: 'Ubuntu-16.04'
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+stages:
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- stage: Build
 
-  
+  jobs:
+
+  - job: Linux
+
+    pool:
+
+      vmImage: 'Ubuntu 16.04'
+
+    steps:
+
+    - checkout: none
+
+    - script: echo A!
+
+
+
+- stage: QA
+
+  dependsOn: Build
+
+  jobs:
+
+  - job: L2
+
+    pool:
+
+      vmImage: 'Ubuntu 16.04'
+
+    steps:
+
+    - checkout: none
+
+    - script: echo B!
+
+
+
+- stage: Ring0
+
+  dependsOn: Build
+
+  jobs:
+
+  - job: SU0
+
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/releases')
+
+    pool:
+
+      vmImage: 'Ubuntu 16.04'
+
+    steps:
+
+    - checkout: none
+
+    - script: echo C!
+
+    
+
+- stage: Ring1
+
+  dependsOn:
+
+  - QA
+
+  - Ring0
+
+  condition: always()
+
+  jobs:
+
+  - job: SU1
+
+    pool:
+
+      vmImage: 'Ubuntu 16.04'
+
+    steps:
+
+    - checkout: none
+
+    - script: echo D!
