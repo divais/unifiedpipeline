@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="32.79999999999999" tests="104" failures="1">
+  <testsuite name="Root Suite" timestamp="2019-03-26T21:52:33" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Asset" timestamp="2019-03-26T21:52:33" tests="3" file="D:\a\1\s\packages\core\parcel-bundler\test\asset.js" failures="0" time="0.911">
+    <testcase name="Asset should include default implementations" time="0" classname="should include default implementations">
+    </testcase>
+    <testcase name="Asset should support overriding the filename of the root bundle" time="0.911" classname="should support overriding the filename of the root bundle">
+    </testcase>
+    <testcase name="Asset should have backward compatibility for package field" time="0" classname="should have backward compatibility for package field">
+    </testcase>
+  </testsuite>
+  <testsuite name="addURLDependency" timestamp="2019-03-26T21:52:34" tests="6" file="D:\a\1\s\packages\core\parcel-bundler\test\asset.js" failures="0" time="0">
+    <testcase name="Asset addURLDependency should ignore urls" time="0" classname="should ignore urls">
+    </testcase>
+    <testcase name="Asset addURLDependency should ignore empty string" time="0" classname="should ignore empty string">
+    </testcase>
+    <testcase name="Asset addURLDependency should generate bundle name" time="0" classname="should generate bundle name">
+    </testcase>
+    <testcase name="Asset addURLDependency should preserve query and hash" time="0" classname="should preserve query and hash">
+    </testcase>
+    <testcase name="Asset addURLDependency should resolve slash" time="0" classname="should resolve slash">
+    </testcase>
+    <testcase name="Asset addURLDependency should resolve tilde" time="0" classname="should resolve tilde">
+    </testcase>
+  </testsuite>
+  <testsuite name="autoinstall" timestamp="2019-03-26T21:52:34" tests="2" file="D:\a\1\s\packages\core\parcel-bundler\test\autoinstall.js" failures="0" time="14.489">
+    <testcase name="autoinstall should install lodash using npm and save dev dependency to package.json" time="13.409" classname="should install lodash using npm and save dev dependency to package.json">
+    </testcase>
+    <testcase name="autoinstall should install lodash using yarn and save dev dependency to package.json" time="1.08" classname="should install lodash using yarn and save dev dependency to package.json">
+    </testcase>
+  </testsuite>
+  <testsuite name="babel" timestamp="2019-03-26T21:52:49" tests="2" file="D:\a\1\s\packages\core\parcel-bundler\test\babel.js" failures="1" time="0.031">
+    <testcase name="babel &quot;before all&quot; hook" time="0.031" classname="&quot;before all&quot; hook">
+      <failure message="unknown: Identifier &apos;T&apos; has already been declared (29:5)
+
+  27 | class C&lt;+T,-U&gt; {}
+  28 | function f&lt;+T,-U&gt;() {}
+&gt; 29 | type T&lt;+T,-U&gt; = {}
+     |      ^" type="SyntaxError"><![CDATA[SyntaxError: unknown: Identifier 'T' has already been declared (29:5)
+
+  27 | class C<+T,-U> {}
+  28 | function f<+T,-U>() {}
+> 29 | type T<+T,-U> = {}
+     |      ^
+    at Object.raise (D:\a\1\s\node_modules\@babel\parser\lib\index.js:3851:17)
+    at ScopeHandler.declareName (D:\a\1\s\node_modules\@babel\parser\lib\index.js:8819:12)
+    at Object.flowParseTypeAlias (D:\a\1\s\node_modules\@babel\parser\lib\index.js:1108:16)
+    at Object.parseExpressionStatement (D:\a\1\s\node_modules\@babel\parser\lib\index.js:2013:23)
+    at Object.parseStatementContent (D:\a\1\s\node_modules\@babel\parser\lib\index.js:7427:19)
+    at Object.parseStatement (D:\a\1\s\node_modules\@babel\parser\lib\index.js:7293:17)
+    at Object.parseStatement (D:\a\1\s\node_modules\@babel\parser\lib\index.js:1993:26)
+    at Object.parseBlockOrModuleBlockBody (D:\a\1\s\node_modules\@babel\parser\lib\index.js:7879:25)
+    at Object.parseBlockBody (D:\a\1\s\node_modules\@babel\parser\lib\index.js:7866:10)
+    at Object.parseTopLevel (D:\a\1\s\node_modules\@babel\parser\lib\index.js:7222:10)
+    at Object.parseTopLevel (D:\a\1\s\node_modules\@babel\parser\lib\index.js:2820:28)
+    at Object.parse (D:\a\1\s\node_modules\@babel\parser\lib\index.js:8871:17)
+    at parse (D:\a\1\s\node_modules\@babel\parser\lib\index.js:11133:38)
+    at parser (D:\a\1\s\node_modules\@babel\core\lib\transformation\normalize-file.js:170:34)
+    at normalizeFile (D:\a\1\s\node_modules\@babel\core\lib\transformation\normalize-file.js:138:11)
+    at parseSync (D:\a\1\s\node_modules\@babel\core\lib\parse.js:56:37)
+    at Object.parse (D:\a\1\s\node_modules\@babel\core\lib\parse.js:24:38)
+    at Context.<anonymous> (test\babel.js:34:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="customErrors" timestamp="2019-03-26T21:52:49" tests="3" file="D:\a\1\s\packages\core\parcel-bundler\test\customErrors.js" failures="0" time="0">
+    <testcase name="customErrors should include port in server errors" time="0" classname="should include port in server errors">
+    </testcase>
+    <testcase name="customErrors should handle known server errors" time="0" classname="should handle known server errors">
+    </testcase>
+    <testcase name="customErrors should handled unknown server errors" time="0" classname="should handled unknown server errors">
+    </testcase>
+  </testsuite>
+  <testsuite name="detect directory changes" timestamp="2019-03-26T21:52:49" tests="0" file="D:\a\1\s\packages\core\parcel-bundler\test\detect-dir-change.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="when a file matches a glob" timestamp="2019-03-26T21:52:49" tests="2" file="D:\a\1\s\packages\core\parcel-bundler\test\detect-dir-change.js" failures="0" time="3.0140000000000002">
+    <testcase name="detect directory changes when a file matches a glob should rebuild when the file is added" time="1.454" classname="should rebuild when the file is added">
+    </testcase>
+    <testcase name="detect directory changes when a file matches a glob should rebuild when the file is removed" time="1.56" classname="should rebuild when the file is removed">
+    </testcase>
+  </testsuite>
+  <testsuite name="when a file does not match a glob" timestamp="2019-03-26T21:52:52" tests="2" file="D:\a\1\s\packages\core\parcel-bundler\test\detect-dir-change.js" failures="0" time="2.9610000000000003">
+    <testcase name="detect directory changes when a file does not match a glob should not rebuild when the file is added" time="1.472" classname="should not rebuild when the file is added">
+    </testcase>
+    <testcase name="detect directory changes when a file does not match a glob should not rebuild when the file is removed" time="1.489" classname="should not rebuild when the file is removed">
+    </testcase>
+  </testsuite>
+  <testsuite name="FSCache" timestamp="2019-03-26T21:52:55" tests="10" file="D:\a\1\s\packages\core\parcel-bundler\test\fs-cache.js" failures="0" time="2.207">
+    <testcase name="FSCache should create directory on ensureDirExists" time="0.032" classname="should create directory on ensureDirExists">
+    </testcase>
+    <testcase name="FSCache should cache resources" time="0.032" classname="should cache resources">
+    </testcase>
+    <testcase name="FSCache should return null for invalidated resources" time="0" classname="should return null for invalidated resources">
+    </testcase>
+    <testcase name="FSCache should remove file on delete" time="0.032" classname="should remove file on delete">
+    </testcase>
+    <testcase name="FSCache should remove from invalidated on write" time="0.015" classname="should remove from invalidated on write">
+    </testcase>
+    <testcase name="FSCache should include mtime for dependencies included in parent" time="0.015" classname="should include mtime for dependencies included in parent">
+    </testcase>
+    <testcase name="FSCache should invalidate when dependency included in parent changes" time="1.039" classname="should invalidate when dependency included in parent changes">
+    </testcase>
+    <testcase name="FSCache should return null on read error" time="0" classname="should return null on read error">
+    </testcase>
+    <testcase name="FSCache should continue without throwing on write error" time="0" classname="should continue without throwing on write error">
+    </testcase>
+    <testcase name="FSCache should invalidate cache if a wildcard dependency changes" time="1.042" classname="should invalidate cache if a wildcard dependency changes">
+    </testcase>
+  </testsuite>
+  <testsuite name="generateCertificate" timestamp="2019-03-26T21:52:58" tests="2" file="D:\a\1\s\packages\core\parcel-bundler\test\generateCertificate.js" failures="0" time="7.629">
+    <testcase name="generateCertificate should support loading cached certificate" time="0" classname="should support loading cached certificate">
+    </testcase>
+    <testcase name="generateCertificate should support caching generated certificate" time="7.629" classname="should support caching generated certificate">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCertificate" timestamp="2019-03-26T21:53:06" tests="1" file="D:\a\1\s\packages\core\parcel-bundler\test\getCertificate.js" failures="0" time="0">
+    <testcase name="getCertificate should support custom certificate" time="0" classname="should support custom certificate">
+    </testcase>
+  </testsuite>
+  <testsuite name="isURL" timestamp="2019-03-26T21:53:06" tests="3" file="D:\a\1\s\packages\core\parcel-bundler\test\is-url.js" failures="0" time="0">
+    <testcase name="isURL should match url" time="0" classname="should match url">
+    </testcase>
+    <testcase name="isURL should match anchor" time="0" classname="should match anchor">
+    </testcase>
+    <testcase name="isURL should match scheme-only" time="0" classname="should match scheme-only">
+    </testcase>
+  </testsuite>
+  <testsuite name="line counter" timestamp="2019-03-26T21:53:06" tests="2" file="D:\a\1\s\packages\core\parcel-bundler\test\lineCounter.js" failures="0" time="0">
+    <testcase name="line counter counts number of lines of a string" time="0" classname="counts number of lines of a string">
+    </testcase>
+    <testcase name="line counter counts number of lines of a file from disk" time="0" classname="counts number of lines of a file from disk">
+    </testcase>
+  </testsuite>
+  <testsuite name="plugins" timestamp="2019-03-26T21:53:06" tests="4" file="D:\a\1\s\packages\core\parcel-bundler\test\plugins.js" failures="0" time="1.494">
+    <testcase name="plugins should load plugins and apply custom asset type" time="0.094" classname="should load plugins and apply custom asset type">
+    </testcase>
+    <testcase name="plugins should load package.json from parent tree" time="0.455" classname="should load package.json from parent tree">
+    </testcase>
+    <testcase name="plugins log a warning if a plugin throws an exception during initialization" time="0.485" classname="log a warning if a plugin throws an exception during initialization">
+    </testcase>
+    <testcase name="plugins log a warning if a parser throws an exception during initialization" time="0.46" classname="log a warning if a parser throws an exception during initialization">
+    </testcase>
+  </testsuite>
+  <testsuite name="resolver" timestamp="2019-03-26T21:53:07" tests="0" file="D:\a\1\s\packages\core\parcel-bundler\test\resolver.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="file paths" timestamp="2019-03-26T21:53:08" tests="7" file="D:\a\1\s\packages\core\parcel-bundler\test\resolver.js" failures="0" time="0.016">
+    <testcase name="resolver file paths should resolve a relative path with an extension" time="0" classname="should resolve a relative path with an extension">
+    </testcase>
+    <testcase name="resolver file paths should resolve a relative path without an extension" time="0" classname="should resolve a relative path without an extension">
+    </testcase>
+    <testcase name="resolver file paths should resolve an absolute path from the root module" time="0.016" classname="should resolve an absolute path from the root module">
+    </testcase>
+    <testcase name="resolver file paths should resolve an absolute path from a node_modules folder" time="0" classname="should resolve an absolute path from a node_modules folder">
+    </testcase>
+    <testcase name="resolver file paths should resolve a tilde path from the root module" time="0" classname="should resolve a tilde path from the root module">
+    </testcase>
+    <testcase name="resolver file paths should resolve a tilde path from the root module without a slash" time="0" classname="should resolve a tilde path from the root module without a slash">
+    </testcase>
+    <testcase name="resolver file paths should resolve a tilde path from a node_modules folder" time="0" classname="should resolve a tilde path from a node_modules folder">
+    </testcase>
+  </testsuite>
+  <testsuite name="builtins" timestamp="2019-03-26T21:53:08" tests="3" file="D:\a\1\s\packages\core\parcel-bundler\test\resolver.js" failures="0" time="0">
+    <testcase name="resolver builtins should resolve node builtin modules" time="0" classname="should resolve node builtin modules">
+    </testcase>
+    <testcase name="resolver builtins should resolve unimplemented node builtin modules to an empty file" time="0" classname="should resolve unimplemented node builtin modules to an empty file">
+    </testcase>
+    <testcase name="resolver builtins should error when resolving node builtin modules with --target=node" time="0" classname="should error when resolving node builtin modules with --target=node">
+    </testcase>
+  </testsuite>
+  <testsuite name="node_modules" timestamp="2019-03-26T21:53:08" tests="11" file="D:\a\1\s\packages\core\parcel-bundler\test\resolver.js" failures="0" time="0.016">
+    <testcase name="resolver node_modules should resolve a node_modules index.js" time="0" classname="should resolve a node_modules index.js">
+    </testcase>
+    <testcase name="resolver node_modules should resolve a node_modules package.main" time="0" classname="should resolve a node_modules package.main">
+    </testcase>
+    <testcase name="resolver node_modules should resolve a node_modules package.module" time="0" classname="should resolve a node_modules package.module">
+    </testcase>
+    <testcase name="resolver node_modules should resolve a node_modules package.browser main field" time="0" classname="should resolve a node_modules package.browser main field">
+    </testcase>
+    <testcase name="resolver node_modules should fall back to package.main when package.module does not exist" time="0.016" classname="should fall back to package.main when package.module does not exist">
+    </testcase>
+    <testcase name="resolver node_modules should not resolve a node_modules package.browser main field with --target=node" time="0" classname="should not resolve a node_modules package.browser main field with --target=node">
+    </testcase>
+    <testcase name="resolver node_modules should fall back to index.js when it cannot find package.main" time="0" classname="should fall back to index.js when it cannot find package.main">
+    </testcase>
+    <testcase name="resolver node_modules should resolve a node_module package.main pointing to a directory" time="0" classname="should resolve a node_module package.main pointing to a directory">
+    </testcase>
+    <testcase name="resolver node_modules should resolve a file inside a node_modules folder" time="0" classname="should resolve a file inside a node_modules folder">
+    </testcase>
+    <testcase name="resolver node_modules should resolve a scoped module" time="0" classname="should resolve a scoped module">
+    </testcase>
+    <testcase name="resolver node_modules should resolve a file inside a scoped module" time="0" classname="should resolve a file inside a scoped module">
+    </testcase>
+  </testsuite>
+  <testsuite name="aliases" timestamp="2019-03-26T21:53:08" tests="23" file="D:\a\1\s\packages\core\parcel-bundler\test\resolver.js" failures="0" time="0">
+    <testcase name="resolver aliases should alias the main file using the package.browser field" time="0" classname="should alias the main file using the package.browser field">
+    </testcase>
+    <testcase name="resolver aliases should alias a sub-file using the package.browser field" time="0" classname="should alias a sub-file using the package.browser field">
+    </testcase>
+    <testcase name="resolver aliases should alias a relative file using the package.browser field" time="0" classname="should alias a relative file using the package.browser field">
+    </testcase>
+    <testcase name="resolver aliases should not alias using the package.browser field with --target=node" time="0" classname="should not alias using the package.browser field with --target=node">
+    </testcase>
+    <testcase name="resolver aliases should alias a deep nested relative file using the package.browser field" time="0" classname="should alias a deep nested relative file using the package.browser field">
+    </testcase>
+    <testcase name="resolver aliases should alias a sub-file using the package.alias field" time="0" classname="should alias a sub-file using the package.alias field">
+    </testcase>
+    <testcase name="resolver aliases should alias a relative file using the package.alias field" time="0" classname="should alias a relative file using the package.alias field">
+    </testcase>
+    <testcase name="resolver aliases should alias a glob using the package.alias field" time="0" classname="should alias a glob using the package.alias field">
+    </testcase>
+    <testcase name="resolver aliases should apply a module alias using the package.alias field in the root package" time="0" classname="should apply a module alias using the package.alias field in the root package">
+    </testcase>
+    <testcase name="resolver aliases should apply a global module alias using the package.alias field in the root package" time="0" classname="should apply a global module alias using the package.alias field in the root package">
+    </testcase>
+    <testcase name="resolver aliases should apply a global module alias to a sub-file in a package" time="0" classname="should apply a global module alias to a sub-file in a package">
+    </testcase>
+    <testcase name="resolver aliases should apply a module alias pointing to a file using the package.alias field" time="0" classname="should apply a module alias pointing to a file using the package.alias field">
+    </testcase>
+    <testcase name="resolver aliases should apply a global module alias pointing to a file using the package.alias field" time="0" classname="should apply a global module alias pointing to a file using the package.alias field">
+    </testcase>
+    <testcase name="resolver aliases should apply an alias for a virtual module folder (relative to project dir)" time="0" classname="should apply an alias for a virtual module folder (relative to project dir)">
+    </testcase>
+    <testcase name="resolver aliases should apply an alias for a virtual module folder only (relative to project dir)" time="0" classname="should apply an alias for a virtual module folder only (relative to project dir)">
+    </testcase>
+    <testcase name="resolver aliases should apply an alias for a virtual module folder (relative to root dir)" time="0" classname="should apply an alias for a virtual module folder (relative to root dir)">
+    </testcase>
+    <testcase name="resolver aliases should apply an alias for a virtual module folder only (relative to root dir)" time="0" classname="should apply an alias for a virtual module folder only (relative to root dir)">
+    </testcase>
+    <testcase name="resolver aliases should apply an alias for a virtual module folder sub-path" time="0" classname="should apply an alias for a virtual module folder sub-path">
+    </testcase>
+    <testcase name="resolver aliases should apply an alias for a virtual module folder glob sub-path" time="0" classname="should apply an alias for a virtual module folder glob sub-path">
+    </testcase>
+    <testcase name="resolver aliases should apply an alias for a virtual module" time="0" classname="should apply an alias for a virtual module">
+    </testcase>
+    <testcase name="resolver aliases should apply a global alias for a virtual module" time="0" classname="should apply a global alias for a virtual module">
+    </testcase>
+    <testcase name="resolver aliases should resolve to an empty file when package.browser resolves to false" time="0" classname="should resolve to an empty file when package.browser resolves to false">
+    </testcase>
+    <testcase name="resolver aliases should resolve to an empty file when package.alias resolves to false" time="0" classname="should resolve to an empty file when package.alias resolves to false">
+    </testcase>
+  </testsuite>
+  <testsuite name="source field" timestamp="2019-03-26T21:53:08" tests="4" file="D:\a\1\s\packages\core\parcel-bundler\test\resolver.js" failures="0" time="0.016">
+    <testcase name="resolver source field should use the source field when symlinked" time="0.016" classname="should use the source field when symlinked">
+    </testcase>
+    <testcase name="resolver source field should not use the source field when not symlinked" time="0" classname="should not use the source field when not symlinked">
+    </testcase>
+    <testcase name="resolver source field should use the source field as an alias when symlinked" time="0" classname="should use the source field as an alias when symlinked">
+    </testcase>
+    <testcase name="resolver source field should use the source field as a glob alias when symlinked" time="0" classname="should use the source field as a glob alias when symlinked">
+    </testcase>
+  </testsuite>
+  <testsuite name="error handling" timestamp="2019-03-26T21:53:08" tests="3" file="D:\a\1\s\packages\core\parcel-bundler\test\resolver.js" failures="0" time="0">
+    <testcase name="resolver error handling should throw when a relative path cannot be resolved" time="0" classname="should throw when a relative path cannot be resolved">
+    </testcase>
+    <testcase name="resolver error handling should throw when a node_module cannot be resolved" time="0" classname="should throw when a node_module cannot be resolved">
+    </testcase>
+    <testcase name="resolver error handling should throw when a subfile of a node_module cannot be resolved" time="0" classname="should throw when a subfile of a node_module cannot be resolved">
+    </testcase>
+  </testsuite>
+  <testsuite name="sourcemaps" timestamp="2019-03-26T21:53:08" tests="2" file="D:\a\1\s\packages\core\parcel-bundler\test\sourcemaps.js" failures="0" time="0">
+    <testcase name="sourcemaps should purify mappings properly" time="0" classname="should purify mappings properly">
+    </testcase>
+    <testcase name="sourcemaps should be able to handle null mappings properly" time="0" classname="should be able to handle null mappings properly">
+    </testcase>
+  </testsuite>
+  <testsuite name="Url Join" timestamp="2019-03-26T21:53:08" tests="9" file="D:\a\1\s\packages\core\parcel-bundler\test\url-join.js" failures="0" time="0.016">
+    <testcase name="Url Join should join a filename with a URL" time="0" classname="should join a filename with a URL">
+    </testcase>
+    <testcase name="Url Join should join a path with a URL" time="0" classname="should join a path with a URL">
+    </testcase>
+    <testcase name="Url Join should join a paths together" time="0.016" classname="should join a paths together">
+    </testcase>
+    <testcase name="Url Join should join an absolute path with a URL" time="0" classname="should join an absolute path with a URL">
+    </testcase>
+    <testcase name="Url Join should join a URL with a querystring" time="0" classname="should join a URL with a querystring">
+    </testcase>
+    <testcase name="Url Join should join a URL with a hash" time="0" classname="should join a URL with a hash">
+    </testcase>
+    <testcase name="Url Join should join two paths together" time="0" classname="should join two paths together">
+    </testcase>
+    <testcase name="Url Join should support windows paths" time="0" classname="should support windows paths">
+    </testcase>
+    <testcase name="Url Join should parse double slashes as host" time="0" classname="should parse double slashes as host">
+    </testcase>
+  </testsuite>
+</testsuites>
