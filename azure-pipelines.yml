@@ -77,15 +77,6 @@ stages:
   condition: always()
 
   jobs:
-
-  - job: SU1
-
-    pool:
-
-      vmImage: 'Ubuntu 16.04'
-
-    steps:
-
-    - checkout: none
-
-    - script: echo D!
+   - deployment: Deploy
+    displayName: Deploy job
+    environment: 'gopinathchexpressAKS - 2081519516.default'
