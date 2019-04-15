@@ -37,6 +37,9 @@ stages:
       vmImage: 'Ubuntu 16.04'
 
     steps:
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFiles: '**/TEST-*.xml'
 
     - checkout: none
 
